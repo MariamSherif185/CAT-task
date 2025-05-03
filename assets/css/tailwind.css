@@ -1,0 +1,53 @@
+/* ./assets/css/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  @apply bg-transparent outline-0  pb-2 border-b border-[#fff];
+}
+.form-group {
+  @apply flex flex-col relative gap-4;
+}
+.shadow-white {
+  box-shadow: 0px 0px 22.854px 0px rgba(248, 253, 255, 0.5);
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  background: #000;
+  padding: 20px;
+  width: 50%;
+  color: #fff;
+  border-radius: 10px;
+  input {
+    width: 45%;
+  }
+}
+.label-value {
+  @apply flex items-center text-sm md:text-base;
+  .label {
+    @apply font-bold md:text-lg w-[50%] lg:w-[35%];
+  }
+  .value {
+    @apply text-lg;
+  }
+}
+.input-icon {
+  @apply absolute right-0 top-[50%] !important;
+}
+.btn-primary {
+  @apply rounded-lg text-[#fff] text-nowrap w-fit md:px-4 md:py-2 px-2 py-1 text-sm md:text-base bg-[#07137B] flex items-center gap-2 !important;
+}
+.navbar-page-link {
+  @apply w-full text-nowrap rounded p-2 hover:text-[#F15B4C] text-xl !important;
+}
